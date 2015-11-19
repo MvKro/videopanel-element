@@ -1,46 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
 <html>
 <head>
-	<title>Hello World</title>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>
-	<script type="text/javascript" src="app.js"></script>
-	<script type="text/javascript" src="controllers.js"></script>
 
-	<script type="text/javascript" src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-	<link rel="import"  href="bower_components/google-castable-video/google-castable-video.html">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="videopanel-element.html">
+
 </head>
-<body ng-app="polymer" ng-controller="HomeController">
-	<input ng-model="url" placeholder="url"></input>
-	<button ng-click="send(url)">Guardar</button>
-	<img ng-src='{{imgUrl}}'>
-	<div id="player"></div>
+<body>
+  <videopanel-element></videopanel-element>
+
 </body>
-
-<script type="text/javascript">
-	var tag = document.createElement('script');
-
- tag.src = "https://www.youtube.com/iframe_api";
-
-var firstScriptTag = document.getElementsByTagName('script')[0];
-
- firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-var player;
-
-function onYouTubeIframeAPIReady(url) {
-
- player = new YT.Player('player', {
-
- height: '390',
-
- width: '640',
-
- videoId: 'M7lc1UVf-VE'
-
- });
-
- };
-</script>
-
 </html>

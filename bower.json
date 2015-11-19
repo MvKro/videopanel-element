@@ -1,28 +1,30 @@
 {
-  "name": "08-CutomPolymerControls",
-  "version": "0.1.0",
-  "description": "Custom components Polymer",
-  "main": "app.js",
-  "moduleType": [],
-  "keywords": [
-    "polymer",
-    "demo",
-    "practice"
-  ],
+  "name": "videopanel-element",
+  "version": "1.0.0",
   "authors": [
-    "Karolina"
+    "Anonymous <anonymous@example.com>"
   ],
-  "license": "MIT",
-  "homepage": "",
-  "private": true,
+  "description": "An element providing a solution to no problem in particular.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "seed"
+  ],
+  "main": "videopanel-element.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/<USERNAME>/seed-element/",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "/.*",
+    "/test/",
+    "/demo/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#1.1.0"
+    "polymer": "Polymer/polymer#^1.0.0",
+    "svg-polymer-element": "MvKro/svg-polymer-element#~1.0.1"
+  },
+  "devDependencies": {
+    "web-component-tester": "*",
+    "svg-polymer-element": "MvKro/svg-polymer-element#~1.0.1"
   }
 }
